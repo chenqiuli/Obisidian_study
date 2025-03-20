@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6c698af6573577dd",
+        "id": "7c1888d400a33893",
         "type": "tabs",
         "children": [
           {
-            "id": "d066315ee7dae878",
+            "id": "0c1410e088337359",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -144,13 +144,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "e1277cdd5965dd83",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,10 +170,11 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "d066315ee7dae878",
+  "active": "0c1410e088337359",
   "lastOpenFiles": [
     "个人/git/git.md",
     "工作/后端培训/笔记.md",
