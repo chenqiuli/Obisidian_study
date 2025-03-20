@@ -4,43 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fa0c0ee1426f4beb",
+        "id": "6c698af6573577dd",
         "type": "tabs",
-        "dimension": 44.27792915531335,
         "children": [
           {
-            "id": "387aaef420c9e3cb",
+            "id": "d066315ee7dae878",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/控件文档/SysProList.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "SysProList"
-            }
-          }
-        ]
-      },
-      {
-        "id": "40921908a16838af",
-        "type": "tabs",
-        "dimension": 55.72207084468664,
-        "children": [
-          {
-            "id": "ea45bb8fb89b1b07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/控件文档/SysProList.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SysProList"
+              "title": "新标签页"
             }
           }
         ]
@@ -100,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d256a1092d471294",
@@ -190,12 +163,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "387aaef420c9e3cb",
+  "active": "d066315ee7dae878",
   "lastOpenFiles": [
     "个人/git/git.md",
+    "工作/后端培训/笔记.md",
+    "工作/控件文档/SysProList.md",
+    "工作/后端培训",
     "工作/控件文档/SysToolTip.md",
     "插件.md",
-    "工作/控件文档/SysProList.md",
     "未命名.canvas",
     "个人/git",
     "个人",
