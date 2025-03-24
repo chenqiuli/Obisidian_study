@@ -4,21 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "7c1888d400a33893",
+        "id": "cb8154d1a2a8e136",
         "type": "tabs",
         "children": [
           {
-            "id": "0c1410e088337359",
+            "id": "2cd3155bb4a91592",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/后端培训/笔记.md",
+                "file": "工作/控件文档/SysProList.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "笔记"
+              "title": "SysProList"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c42bd94c4d27c226",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31eece2d4105577d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作/控件文档/SysProList.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "SysProList"
             }
           }
         ]
@@ -180,11 +200,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0c1410e088337359",
+  "active": "31eece2d4105577d",
   "lastOpenFiles": [
-    "个人/git/git.md",
+    "Pasted image 20250324140727.png",
     "工作/后端培训/笔记.md",
     "工作/控件文档/SysProList.md",
+    "个人/git/git.md",
     "工作/后端培训",
     "工作/控件文档/SysToolTip.md",
     "插件.md",
