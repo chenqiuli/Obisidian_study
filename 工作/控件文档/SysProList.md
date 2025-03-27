@@ -26,11 +26,14 @@
 - 4、列表接口死循环：① 第一个状态栏搜索一个“1”让总数变少点，点击进去详情页，回来加载更多之后切换状态 ✅
 - 5、编辑、新增的时候，回退第一次接口没有拿到params ✅ （原因出在SysList的hasMore，跟第一点冲突）
 - 6、新增有判断是否选择项目后再跳转，之前那一步reload要真的跳转才执行 ✅ （判断history真正改变了才执行onClickBubble的reload()）
-- 7、平台页面若不配置organizationSelectConfig，又想要接口入参projectId，代码里面还没实现，这时候需要去拿SysOrganization.useWatch的缓存去setEntityId (TODO)
+
+##### 待优化：
+- 1、平台页面若不配置organizationSelectConfig，又想要接口入参projectId，代码里面还没实现，这时候需要去拿SysOrganization.useWatch的缓存去setEntityId (自己想到的，目前还没需求) 
 
 ##### 业务需检查、调整：
 1、调整在查看页内SysModal 的 clearProListCache要设置成false
 2、以前所有的列表页：SysToolBar + SysList + SysFixedIcon，替换成SysProList。SysToolBar会移除
+3、在弹窗SysModal内使用SysProList，都要加上enableCache={false}
 
 <hr />
 
@@ -40,29 +43,29 @@
 ###### 二、API
 - SysProList属性：
 
-| 属性 | 说明 | 类型| 默认值| 
-| -- | -- | --| -- | 
-|organizationSelectConfig | 设置头部项目选择树 | OrganizationSelectConfigType | - | 
-|searchConfig | 设置搜索框|SearchConfigType | - |
-|filterConfig | 设置高级搜索| FilterConfigType | - |
-|toolBarConfig | 设置工具栏，如：导出等操作 | ToolBarConfigType | - |
-|statusConfig | 设置状态栏 | StatusConfigType | - |
-|policy | 新增按钮的操作授权，跟列表上编辑按钮返回的operations权限保持一致| string| - |
-| onClickBubble | 新增按钮点击时的回调 | () => void | - |
-|service | 列表接口 | SysProListServiceType | -|
-| filterOption | 配置接口入参的格式，但高级搜索，搜索框，状态栏的字段不要重复配置 | FilterOptions | - |
-|onLoadCallBack | 列表请求后，父组件拿到的回调数据，用ref去接收，不使用state | （value: T[]) => void | -|
-| leftExtra | 搜索框左侧区域 | React.ReactNode | - |
-| rightExtra | 工具栏右侧区域 | React.ReactNode | - |
-|topExtra | 搜索框上面区域 | React.ReactNode | - |
-|bottomExtra | 搜索框下面区域 | React.ReactNode | - |
-|isShowHeader | 是否显示橙色背景头，用于在SysModal中使用 | boolean | true| 
-| entityData | 在SysModal中使用时，不显示橙色背景头，需要手动传入的项目信息。一般是在```SysOrganizationSelect.useWatch```获取| EntityType | - | 
-|initParams | 传入状态汇总和列表接口的默认参数，不受控 | Record<string, any> | - |
-|activeParams | 传入状态汇总和列表接口的参数，受控| Record<string, any> | - |
-| beforeChange | 作接口入参前的一些修改，回调函数内拿到所有的入参对象 | params: Record<string, any>) => Record<string, any> | - |
-|onChangeRaw|拿到入参的整个对象。一般用于：services需要自己组装入参，或单独使用SysToolBar控件 | (params: Record<string, any>) => void | -|
-|enableCache | 是否开启缓存，如：搜索框参数、列表数据、高级搜索参数等，在SysModal中需关闭 | boolean | true|
+| 属性                       | 说明                                                                            | 类型                                                  | 默认值  |     |
+| ------------------------ | ----------------------------------------------------------------------------- | --------------------------------------------------- | ---- | --- |
+| organizationSelectConfig | 设置头部项目选择树                                                                     | OrganizationSelectConfigType                        | -    |     |
+| searchConfig             | 设置搜索框                                                                         | SearchConfigType                                    | -    |     |
+| filterConfig             | 设置高级搜索                                                                        | FilterConfigType                                    | -    |     |
+| toolBarConfig            | 设置工具栏，如：导出等操作                                                                 | ToolBarConfigType                                   | -    |     |
+| statusConfig             | 设置状态栏                                                                         | StatusConfigType                                    | -    |     |
+| policy                   | 新增按钮的操作授权，跟列表上编辑按钮返回的operations权限保持一致                                         | string                                              | -    |     |
+| onClickBubble            | 新增按钮点击时的回调                                                                    | () => void                                          | -    |     |
+| service                  | 列表接口                                                                          | SysProListServiceType                               | -    |     |
+| filterOption             | 配置接口入参的格式，但高级搜索，搜索框，状态栏的字段不要重复配置                                              | FilterOptions                                       | -    |     |
+| onLoadCallBack           | 列表请求后，父组件拿到的回调数据，用ref去接收，不使用state                                             | （value: T[]) => void                                | -    |     |
+| leftExtra                | 搜索框左侧区域                                                                       | React.ReactNode                                     | -    |     |
+| rightExtra               | 工具栏右侧区域                                                                       | React.ReactNode                                     | -    |     |
+| topExtra                 | 搜索框上面区域                                                                       | React.ReactNode                                     | -    |     |
+| bottomExtra              | 搜索框下面区域                                                                       | React.ReactNode                                     | -    |     |
+| isShowHeader             | 是否显示橙色背景头，用于在SysModal中使用                                                      | boolean                                             | true |     |
+| entityData               | 在SysModal中使用时，不显示橙色背景头，需要手动传入的项目信息。一般是在```SysOrganizationSelect.useWatch```获取 | EntityType                                          | -    |     |
+| initParams               | 传入状态汇总和列表接口的默认参数，不受控                                                          | Record<string, any>                                 | -    |     |
+| activeParams             | 传入状态汇总和列表接口的参数，受控                                                             | Record<string, any>                                 | -    |     |
+| beforeChange             | 作接口入参前的一些修改，回调函数内拿到所有的入参对象                                                    | (params: Record<string, any>) => Record<string, any> | -    |     |
+| onChangeRaw              | 拿到入参的整个对象。一般用于：services需要自己组装入参，或单独使用SysToolBar控件                             | (params: Record<string, any>) => void               | -    |     |
+| enableCache              | 是否开启缓存，如：搜索框参数、列表数据、高级搜索参数等，在SysModal中需关闭                                     | boolean                                             | true |     |
 
 - SysProListServiceType类型：
 ```bash
@@ -101,8 +104,9 @@
 | label | 标题| React.ReactNode | - |
 |value | 数据源，当type = ‘select’,'multiSelect'才需要，可直接传入数据字典|(Partial<Popup> & Option)[]|-|
 | field |后端字段| string | - |
-| type | 渲染成什么控件 | 'select','multiSelect','dateRange','text','date' | -|
+| type | 渲染成什么控件，目前支持：日期区间，日期，单选标签，多选标签，文本框 | 'select','multiSelect','dateRange','text','date' | -|
 | initValue | 默认值 | InitValueType | - |
+|withTime | type = dateRange 是否携带00:00:00 至 23:59:59 | boolean | false |
 | onChange | 内容变化时的回调 | OnChangeType | - |
 
 - OnChangeType类型：
@@ -132,7 +136,7 @@
 |omitField | 汇总接口请求时的忽略字段，默认是field，但不排除使用还需要忽略其它字段| string[] |- |
 
 ###### 三、注意事项
-- 重启、删除、移入黑名单等改变列表条数或状态的，都需要执行reload?.()，才会重刷列表接口
+- 重启、删除、移入黑名单等改变列表条数或状态的，调完各自的接口都需要执行reload?.()，才会重刷列表接口
 - 编辑前记得要先执行reload?.()
-- 查看页内使用的任何SysModal内添加上clearProListCache=false，不然从详情页后退就会重刷接口了
+- 查看页内使用的任何SysModal内添加上clearProListCache=false，不然从详情页后退就会重刷接口了，也记不住滚动位置了
 
