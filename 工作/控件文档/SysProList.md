@@ -26,6 +26,10 @@
 - 4、列表接口死循环：① 第一个状态栏搜索一个“1”让总数变少点，点击进去详情页，回来加载更多之后切换状态 ✅
 - 5、编辑、新增的时候，回退第一次接口没有拿到params ✅ （原因出在SysList的hasMore，跟第一点冲突）
 - 6、新增有判断是否选择项目后再跳转，之前那一步reload要真的跳转才执行 ✅ （判断history真正改变了才执行onClickBubble的reload()）
+- 7、filterConfig有initValue时，初始化没有传入接口✅
+- 8、filterConfig内的配置不支持在filterOption更改入参配置✅
+- 9、filterConfig内的select的value若是字符串拼接，入参接口没有使用in操作符✅
+- 10、业务代码配置了toolBarConfig，点击onAction对导致列表接口、汇总接口重刷新 ✅（使用useMemo缓存SysProList，避免父组件渲染导致子组件重渲染）
 
 ##### 待优化：
 - 1、平台页面若不配置organizationSelectConfig，又想要接口入参projectId，代码里面还没实现，这时候需要去拿SysOrganization.useWatch的缓存去setEntityId (自己想到的，目前还没需求) 
@@ -99,15 +103,15 @@
 
 - FilterOptionType属性：
 
-| 属性 | 说明 | 类型| 默认值| 
-| -- | -- | --| -- | 
-| label | 标题| React.ReactNode | - |
-|value | 数据源，当type = ‘select’,'multiSelect'才需要，可直接传入数据字典|(Partial<Popup> & Option)[]|-|
-| field |后端字段| string | - |
-| type | 渲染成什么控件，目前支持：日期区间，日期，单选标签，多选标签，文本框 | 'select','multiSelect','dateRange','text','date' | -|
-| initValue | 默认值 | InitValueType | - |
-|withTime | type = dateRange 是否携带00:00:00 至 23:59:59 | boolean | false |
-| onChange | 内容变化时的回调 | OnChangeType | - |
+| 属性        | 说明                                              | 类型                                               | 默认值   |     |
+| --------- | ----------------------------------------------- | ------------------------------------------------ | ----- | --- |
+| label     | 标题                                              | React.ReactNode                                  | -     |     |
+| value     | 数据源，当type = ‘select’,'multiSelect'才需要，可直接传入数据字典 | (Partial<Popup> & Option)[]                      | -     |     |
+| field     | 后端字段                                            | string                                           | -     |     |
+| type      | 渲染成什么控件，目前支持：日期区间，日期，单选标签，多选标签，文本框              | 'select','multiSelect','dateRange','text','date' | -     |     |
+| initValue | 默认值                                             | InitValueType                                    | -     |     |
+| withTime  | type = dateRange 是否携带00:00:00 至 23:59:59        | boolean                                          | false |     |
+| onChange  | 内容变化时的回调                                        | OnChangeType                                     | -     |     |
 
 - OnChangeType类型：
 ```bash
@@ -139,4 +143,5 @@
 - 重启、删除、移入黑名单等改变列表条数或状态的，调完各自的接口都需要执行reload?.()，才会重刷列表接口
 - 编辑前记得要先执行reload?.()
 - 查看页内使用的任何SysModal内添加上clearProListCache=false，不然从详情页后退就会重刷接口了，也记不住滚动位置了
+- 如有配置到toolBarConfig，必须使用useMemo来缓存SysProList的JSX，防止因为业务组件渲染，导致SysProList子组件也重渲染。重渲染之后导致列表接口、汇总接口都会刷新。
 
