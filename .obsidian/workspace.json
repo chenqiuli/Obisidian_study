@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ad416047ceaabb63",
+        "id": "471e84da4c5d1599",
         "type": "tabs",
         "children": [
           {
-            "id": "a5c500fd44e0e4c9",
+            "id": "f9905f3cbde5ba83",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "工作/控件文档/SysProList.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "SysProList"
             }
           }
         ]
@@ -75,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d256a1092d471294",
@@ -145,32 +150,49 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "e1277cdd5965dd83",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "a5c500fd44e0e4c9",
+  "active": "f9905f3cbde5ba83",
   "lastOpenFiles": [
+    "个人/git/git.md",
     "工作/控件文档/SysProList.md",
     "工作/控件文档/SysToolTip.md",
-    "新建 文本文档.txt",
+    "Pasted image 20250325110632.png",
+    "Pasted image 20250325105816.png",
+    "Pasted image 20250324140727.png",
+    "工作/控件文档/SysInnerProList.md",
+    "工作/后端培训/笔记.md",
+    "工作/后端培训",
     "插件.md",
-    "个人/git/git.md",
     "未命名.canvas",
     "个人/git",
     "个人",
