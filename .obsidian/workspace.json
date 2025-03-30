@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9f87648fb7ccee67",
+        "id": "ad416047ceaabb63",
         "type": "tabs",
         "children": [
           {
-            "id": "36e4a1847561ee7e",
+            "id": "a5c500fd44e0e4c9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/控件文档/SysToolTip.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "SysToolTip"
+              "title": "新标签页"
             }
           }
         ]
@@ -74,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -167,12 +164,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8424eb537d1bb1ac",
+  "active": "a5c500fd44e0e4c9",
   "lastOpenFiles": [
+    "工作/控件文档/SysProList.md",
+    "工作/控件文档/SysToolTip.md",
     "新建 文本文档.txt",
     "插件.md",
-    "工作/控件文档/SysToolTip.md",
-    "工作/控件文档/SysProList.md",
     "个人/git/git.md",
     "未命名.canvas",
     "个人/git",
