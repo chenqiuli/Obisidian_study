@@ -144,4 +144,5 @@
 - 编辑前记得要先执行reload?.()
 - 查看页内使用的任何SysModal内添加上clearProListCache=false，不然从详情页后退就会重刷接口了，也记不住滚动位置了
 - 如有配置到toolBarConfig，必须使用useMemo来缓存SysProList的JSX，防止因为业务组件渲染，导致SysProList子组件也重渲染。重渲染之后导致列表接口、汇总接口都会刷新。
+- 若SysProList渲染的children是一个子组件，且子组件内有usePopupList，必须要在父组件上调用再传给子组件，不能在子组件内直接使用usePopupList，会造成死循环。
 
