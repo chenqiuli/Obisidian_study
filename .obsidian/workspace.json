@@ -4,21 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "471e84da4c5d1599",
+        "id": "05f9de8142c2dc55",
         "type": "tabs",
         "children": [
           {
-            "id": "f9905f3cbde5ba83",
+            "id": "0a52f8ed5e08b29c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/控件文档/SysProList.md",
+                "file": "工作/控件文档/菜单.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "SysProList"
+              "title": "菜单"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1907ec41a6ffe216",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "67b60ad613891dda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作/控件文档/菜单.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "菜单"
             }
           }
         ]
@@ -74,13 +94,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d256a1092d471294",
@@ -157,8 +175,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -176,14 +194,19 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "f9905f3cbde5ba83",
+  "active": "67b60ad613891dda",
   "lastOpenFiles": [
-    "个人/git/git.md",
     "工作/控件文档/SysProList.md",
+    "工作/控件文档/菜单.md",
     "工作/控件文档/SysToolTip.md",
+    "工作/周报/2024.03.31 - 2024.04.03.md",
+    "工作/周报",
+    "个人/git/git.md",
     "Pasted image 20250325110632.png",
     "Pasted image 20250325105816.png",
     "Pasted image 20250324140727.png",
