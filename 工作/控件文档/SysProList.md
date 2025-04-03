@@ -32,9 +32,10 @@
 - 10、业务代码配置了toolBarConfig，点击onAction对导致列表接口、汇总接口重刷新 ✅（使用useMemo缓存SysProList，避免父组件渲染导致子组件重渲染）
 
 ##### 特殊 讲：
-- http://localhost:8000/#/asset/asset-management/asset-acquisition , IFCA Msc Bhd, Rejected, Re-Submit
+- http://localhost:8000/#/asset/asset-management/asset-acquisition , IFCA Msc Bhd, Rejected, Re-Submit，statusConfig的activeKey
 - http://localhost:8000/#/leads/prospectPool , statusConfig无services
-- http://localhost:8000/#/contract/leaseContract ， 切换Approved不止入参这个状态，还有recordStatus，汇总接口默认除了状态字段，其它全入参，但这里特殊recordStatus也不要
+- http://localhost:8000/#/contract/leaseContract ， 切换Approved不止入参这个状态，还有recordStatus，汇总接口默认除了状态字段，其它全入参，但这里特殊recordStatus也不要，omitField
+- http://localhost:8000/#/contract/leaseContract ，龙威广场，第一个页签没数据，高亮第二个页签
 
 ##### 待优化：
 - 1、平台页面若不配置organizationSelectConfig，又想要接口入参projectId，代码里面还没实现，这时候需要去拿SysOrganization.useWatch的缓存去setEntityId (自己想到的，目前还没需求) 
