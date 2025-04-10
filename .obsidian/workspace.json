@@ -6,6 +6,7 @@
       {
         "id": "896c6ace989c04dd",
         "type": "tabs",
+        "dimension": 50.340599455040866,
         "children": [
           {
             "id": "e424d99ba32ed066",
@@ -24,18 +25,19 @@
         ]
       },
       {
-        "id": "f3626c8fca24b8fd",
+        "id": "fe2125039ce80af4",
         "type": "tabs",
+        "dimension": 49.65940054495913,
         "children": [
           {
-            "id": "f83ab9ffda7e62b5",
+            "id": "6491f1f7157499aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "工作/控件文档/SysProList.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "SysProList"
@@ -200,7 +202,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "e424d99ba32ed066",
+  "active": "6491f1f7157499aa",
   "lastOpenFiles": [
     "工作/周报/2024.03.31 - 2024.04.03.md",
     "工作/控件文档/SysToolTip.md",
