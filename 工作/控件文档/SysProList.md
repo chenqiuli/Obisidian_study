@@ -18,7 +18,7 @@
 - type = date：=
 - type = text：=
 
-4、部分service接口的params参数无Filter，这个时候需对service的接口进行二次导出，如：
+4、部分service接口的params参数无Filter、Sort、Take、RequireTotalCount等参数，这个时候需对service的接口进行二次导出，如：
 ```tsx
 const loadData = async () => {
 	const res = await getApiAppAttachmentTypeTree({
@@ -32,25 +32,18 @@ const loadData = async () => {
 };
 service={loadData}
 ```
-5、部分service接口除了传入常见的params，还有必传的params，这时候可以对service的接口进行二次导出，如：
+5、部分service接口除了传入常见的params[Filter、Sort、Take、RequireTotalCount等参数]，还有必传的params，这时候可以对service的接口进行二次导出，如：
 ```tsx
 service={async (params) => {
-if (!versionNumber) {
-return {
-data: [],
-
-};
-
-}
-
-return await getApiOpenapiOpenApiManage({
-
-...params,
-
-versionNumber,
-
-});
-
+	if (!versionNumber) {
+		return {
+			data: [],
+		};
+	}
+	return await getApiOpenapiOpenApiManage({
+		...params,
+		versionNumber,
+	});
 }}
 ```
 5、列表页如果有使用到SysProList组件，return出去的JSX如果不只有SysProList组件，根部请使用<></>或Fragment标签包裹，不然页面会不能滚动
@@ -91,7 +84,7 @@ versionNumber,
 
 ##### 控件文档
 ###### 一、[效果](http://localhost:8000/#/view/list)
-![](Pasted%20image%2020250325110632.png)
+![](Pasted%20image%2020250425112312.png)
 ###### 二、API
 - SysProList属性：
 
@@ -198,6 +191,7 @@ versionNumber,
 - 重启、删除、移入黑名单等改变列表条数或状态的，调完各自的接口都需要执行reload?.()，才会重刷列表接口
 - 编辑前记得要先执行reload?.()
 - 查看页内使用的任何SysModal内添加上clearProListCache=false，不然从详情页后退就会重刷接口了，也记不住滚动位置了
-- 如有配置到toolBarConfig，必须使用useMemo来缓存SysProList的JSX，防止因为业务组件渲染，导致SysProList子组件也重渲染。重渲染之后导致列表接口、汇总接口都会刷新。
+- 如有配置到toolBarConfig，toolBarConfig内的actions的onAction事件是条件渲染某个JSX元素的，必须使用useMemo来缓存SysProList，防止因为条件渲染导致业务父组件渲染，导致SysProList子组件也重渲染。重渲染之后导致列表接口、汇总接口都会刷新。
 - 若SysProList渲染的children是一个子组件，且子组件内有usePopupList，必须要在父组件上调用再传给子组件，不能在子组件内直接使用usePopupList，会造成死循环。
+- 页面如果是显示“All Projects”，路由表必须配置projectConfig : {showEntityType: false}
 
