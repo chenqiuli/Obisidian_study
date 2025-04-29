@@ -7,3 +7,10 @@ git fetch origin
 git log -2 | cat
 git reset --soft HEAD~1  && git commit -m"正确的命令"
 ```
+- 使用cherry-pick把某个分支的部分提交到目标分支，而非合并整个分支
+```bash
+git branch // 查看当前所有的分支
+git log // 查看要挑拣的commit hash
+git checkout XXX // 切换到目标分支
+出现冲突解决冲突，然后正常add、commit、pull、push
+```
