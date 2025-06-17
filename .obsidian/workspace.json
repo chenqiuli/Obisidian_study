@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/控件文档/SysProList.md",
+                "file": "个人/git/git.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "SysProList"
+              "title": "git"
             }
           }
         ]
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5,
-    "collapsed": true
+    "width": 293.5
   },
   "right": {
     "id": "d256a1092d471294",
@@ -202,11 +201,11 @@
   },
   "active": "d8752bc72f0f0ce2",
   "lastOpenFiles": [
+    "工作/控件文档/SysProList.md",
     "工作/控件文档/SysProFormSelect.md",
     "工作/控件文档/SysToast.md",
     "工作/控件文档/SysToolTip.md",
     "工作/控件文档/SysAntdDatePicker.md",
-    "工作/控件文档/SysProList.md",
     "个人/git/git.md",
     "工作/前端配置/前端配置.md",
     "工作/控件文档/SysCalendarPicker.md",
