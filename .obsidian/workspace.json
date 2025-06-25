@@ -4,26 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "e7abae675abfbdb1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d8752bc72f0f0ce2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "个人/git/git.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "git"
-            }
-          }
-        ]
-      },
-      {
         "id": "8987e01ac334edc5",
         "type": "tabs",
         "children": [
@@ -33,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/控件文档/SysProList.md",
+                "file": "工作/控件文档/SysProFormSelect.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SysProFormSelect"
+            }
+          }
+        ]
+      },
+      {
+        "id": "5d61da72f3a6bf6e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d30e361e9675f06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作/控件文档/SysProFormSelect.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SysProList"
+              "title": "SysProFormSelect"
             }
           }
         ]
@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 293.5,
+    "collapsed": true
   },
   "right": {
     "id": "d256a1092d471294",
@@ -199,11 +200,11 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "d8752bc72f0f0ce2",
+  "active": "ce96f0bc9a97462f",
   "lastOpenFiles": [
-    "工作/前端配置/前端配置.md",
-    "个人/git/git.md",
     "工作/控件文档/SysProList.md",
+    "个人/git/git.md",
+    "工作/前端配置/前端配置.md",
     "工作/控件文档/SysProFormSelect.md",
     "工作/控件文档/SysToast.md",
     "工作/控件文档/SysToolTip.md",

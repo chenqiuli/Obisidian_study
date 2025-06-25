@@ -69,6 +69,7 @@ service={async (params) => {
 - 17、状态规则优先级：activeKey > initValue > 所有tabs从左到右优先展示第一个有显示数字的第一个tabs，若都无展示所有tabs从左到右不显示数字的第一个tabs，若都无展示第一个。✅
 - 18、无services的StatusFilter组件，设置了initValue后，Tabs不见了 ✅ 
 - 19、StatusFilter的tabs数据是前端自定义的静态数据，且 projectConfig: { showEntityType: false}，单独使用SysToolBar2的时候会刷两次 ✅ （设置prevFilterParamsRef.current = _filterParams的判断条件添加 !summaryData）
+- 20、在列表页有一个SysProList组件，在列表页过滤一些条件，然后进入新增页，新增页面有一个弹窗是SysProList组件【设置了enableCache=false】，拿到了列表页的过滤缓存参数，导致弹窗的接口500报错了（存在filterValuesCache参数时，只有enableCache设置为true，才进行setFilterData） ✅
 
 ##### 优化：
 - 1、列表页①是SysProList，跳转进去的页面②还使用了SysProList，②初始化不会调用接口，看了是因为filterParamsCache不变。 【预期是能使用，目前方案是②使用SysToolBar2 + SysList，想到的是传一个key属性给SysProList组件，让它在有这个属性的时候就要调用】eg：http://localhost:8000/#/forecast/projectBudget
