@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "SysToolTip"
             }
+          },
+          {
+            "id": "0c9aebfe84af1c3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "个人/git/git.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "git"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,18 +189,20 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "e9402beb0b7f2899",
+  "active": "0c9aebfe84af1c3f",
   "lastOpenFiles": [
+    "工作/控件文档/SysProFormSelect.md",
+    "工作/控件文档/SysToolTip.md",
     "个人/git/git.md",
     "工作/前端配置/前端配置.md",
     "工作/周报/2024.03.31 - 2024.04.03.md",
-    "工作/控件文档/SysToolTip.md",
     "工作/控件文档/SysToast.md",
     "工作/控件文档/SysProList.md",
-    "工作/控件文档/SysProFormSelect.md",
     "工作/控件文档/SysProDatePicker.md",
     "工作/控件文档/SysForm.md",
     "工作/控件文档/SysCalendarPicker.md",

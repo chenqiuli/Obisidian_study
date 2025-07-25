@@ -203,7 +203,7 @@ type FooterValue = {
 
 
 #### 在编辑下：
-- 多选模式下，有一个value是有效的，有一个value是无效的，无效的value会直接显示guid，因为没法知道这个无效的guid的label究竟是什么
+- 多选模式下，有一个value是有效的，有一个value是无效的，无效的value会直接显示guid，因为没法从formLabel中知道这个无效的guid的label究竟是什么，没办法保证顺序问题
 
 
 
