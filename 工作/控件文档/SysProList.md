@@ -204,3 +204,56 @@ service={async (params) => {
 - 若SysProList渲染的children是一个子组件，且子组件内有usePopupList，必须要在父组件上调用再传给子组件，不能在子组件内直接使用usePopupList，会造成死循环。
 - 页面如果是显示“All Projects”，路由表必须配置projectConfig : {showEntityType: false}
 
+
+
+###### 四、PC表格
+1、表格可以加一个参数valueType，目前遇到的类型有：
+
+| valueType | 业务传的字段 | 解释|
+| -- | -- |-- |
+| dateRange | contractStartDate、contractEndDate | 要使用Common:To的多语言进行展示，用formatDate格式化时间，但是要支持让业务传入格式成什么时间格式✅ | 
+| date | signingDate | 用formatDate格式化时间，但是要支持让业务传入格式成什么时间格式✅ | 
+| avatar | 业务默认不传，如果要改变SysAvatar组件的属性再进行传参 | 用SysAvatar组件来进行展示，参考SysAvatarListItem✅ |
+| tag | 传color和children | 默认bordered=false、transparentBackgroundColor，用SysTag组件✅ 【SysTag的颜色还没实现】 | 
+| amount【不好对比，暂时不要，可预留】 | postAmt | 调用formatLocaleAmountUnit这个hook✅ | 
+| number | contractPrice | 调用formatNumber这个hook ✅|
+| mapjson | contractUnits数组 | 展示成A,B,C这种格式，使用Common:Comma来分隔内容|
+
+```tsx
+// avatar
+<SysAvatar isCircle username={record.brandName} fileId={record.brandLogoFileId} />
+// dateRange
+translateMessage({
+	id: 'Common:To',
+	values: {
+		from: formatDate(record.contractStartDate!),
+		to: formatDate(record.contractEndDate!),
+	},
+	description: '{from} to {to},{from} 至 {to}',
+});
+// mapjson
+{text?.map((value) => value.unitName)?.join(
+	translateMessage({
+		id: 'Common:Comma',
+		description: ',',
+	}),
+)}
+// date
+formatDate(text)
+// number
+formatNumber(text)
+// amount
+formatLocaleAmountUnit(text)
+// tag
+<SysTag bordered={false} transparentBackgroundColor>
+	{item.contractStatus}
+</SysTag>
+```
+
+2、实现查看缓存，记住页码
+3、column是否要开启ellipsis，有设置width就要默认开启？
+4、批量选择要跨页吗
+5、天数、金额需要靠右吗
+6、column的title变成多语言的key，不要业务每个都自己写translateMessage ✅
+
+
