@@ -251,7 +251,7 @@ formatLocaleAmountUnit(text)
 ```
 
 2、实现查看缓存，记住页码
-3、column是否要开启ellipsis，有设置width就要默认开启？
+3、column是否要开启ellipsis，有设置width就要默认开启
 4、批量选择要跨页吗
 5、天数、金额需要靠右吗
 6、column的title变成多语言的key，不要业务每个都自己写translateMessage ✅
