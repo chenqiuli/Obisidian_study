@@ -34,7 +34,7 @@
               "type": "markdown",
               "state": {
                 "file": "个人/默写/默写.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -200,7 +200,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "4a494ca97bb64a05",
+  "active": "f53fe76a4e0579b9",
   "lastOpenFiles": [
     "个人/git/git.md",
     "个人/默写/默写.md",
