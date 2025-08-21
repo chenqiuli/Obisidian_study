@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "个人/默写/默写.md",
+                "file": "个人/git/git.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "默写"
+              "title": "git"
             }
           }
         ]
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5,
-    "collapsed": true
+    "width": 293.5
   },
   "right": {
     "id": "d256a1092d471294",
@@ -200,10 +199,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "f53fe76a4e0579b9",
+  "active": "4a494ca97bb64a05",
   "lastOpenFiles": [
-    "个人/git/git.md",
     "个人/默写/默写.md",
+    "个人/git/git.md",
     "工作/工作简记/八月份.md",
     "工作/控件文档/SysProList.md",
     "工作/工作简记/七月份.md",
