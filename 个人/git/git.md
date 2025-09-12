@@ -14,3 +14,5 @@ git log // 查看要挑拣的commit hash
 git checkout XXX // 切换到目标分支
 出现冲突解决冲突，然后正常add、commit、pull、push
 ```
+
+- 严格区分大小写：git config core.ignorecase false
