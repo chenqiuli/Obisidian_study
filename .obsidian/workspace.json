@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1d60abda8849dca0",
+        "id": "cf80d7cbd9978d14",
         "type": "tabs",
         "children": [
           {
-            "id": "9049f4012d55af38",
+            "id": "ec822d0e5078d148",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/实习生培训/实习生培训.md",
-                "mode": "source",
+                "file": "个人/抽包.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "实习生培训"
+              "title": "抽包"
             }
           }
         ]
@@ -180,24 +180,35 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "9049f4012d55af38",
+  "active": "ec822d0e5078d148",
   "lastOpenFiles": [
+    "工作/工作简记/十一月份.md",
+    "个人/抽包.md",
     "工作/后端培训/笔记.md",
+    "工作/实习生培训/实习生培训.md",
+    "工作/后端培训/实践.md",
+    "个人/git/git.md",
+    "Pasted image 20251031150304.png",
+    "Pasted image 20251031150027.png",
+    "Pasted image 20251031145320.png",
+    "Pasted image 20251031144623.png",
+    "Pasted image 20251031114439.png",
+    "Pasted image 20251031114215.png",
+    "Pasted image 20251031110802.png",
+    "Pasted image 20251031105714.png",
+    "Pasted image 20251031104739.png",
+    "Pasted image 20251031104641.png",
+    "业务仓库.md",
     "工作/工作简记/十月份.md",
     "工作/工作简记/七月份.md",
     "工作/工作简记/九月份.md",
     "工作/工作简记/菜单.md",
     "工作/工作简记/八月份.md",
     "个人/默写/默写.md",
-    "工作/后端培训/实践.md",
     "工作/随手Bug.md",
-    "Pasted image 20251027160652.png",
-    "工作/实习生培训/实习生培训.md",
-    "个人/git/git.md",
     "理财/💰.md",
     "工作/实习生培训",
     "个人/随手记.md",
-    "Pasted image 20250924104720.png",
     "理财/支付宝基金收益.md",
     "理财/招商银行基金收益.md",
     "理财/建设银行理财收益.md",
@@ -209,18 +220,8 @@
     "工作/工作简记/a's.md",
     "工作/工作简记/测算方案.md",
     "测算方案.pdf",
-    "Pasted image 20250901162810.png",
     "工作/控件文档/SysCalendarPicker.md",
-    "工作/控件文档/SysProList.md",
-    "Pasted image 20250731160432.png",
-    "Pasted image 20250731154929.png",
-    "Pasted image 20250731153624.png",
-    "Pasted image 20250731153122.png",
-    "Pasted image 20250731151548.png",
-    "Pasted image 20250731151521.png",
-    "Pasted image 20250731151243.png",
     "个人/默写",
-    "工作/控件文档/SysProFormSelect.md",
     "工作/工作简记",
     "工作/前端配置",
     "工作/周报",
