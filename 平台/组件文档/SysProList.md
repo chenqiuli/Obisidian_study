@@ -75,9 +75,8 @@ service={async (params) => {
 
 ##### 优化：
 - 1、列表页①是SysProList，跳转进去的页面②还使用了SysProList，②初始化不会调用接口，看了是因为filterParamsCache不变。 【预期是能使用，目前方案是②使用SysToolBar2 + SysList，想到的是传一个key属性给SysProList组件，让它在有这个属性的时候就要调用】eg：http://localhost:8000/#/forecast/projectBudget
-- 2、分开使用的时候，列表太长，滚动会有问题，我想想怎么优化 eg：http://localhost:8000/#/forecast/projectBudget
-- 3、点击查看后退的时候，不能刷业务额外的接口【先用一个页面来玩，然后看别的怎么实现】
-- 4、批量选择的数据不是普通列表，而是树形的列表 eg：/Users/cql/work/business-frontend/apps/mobile/src/pages/Patrolling/BasicSetting/PatrolLocations。我在控件内弄了个otherData
+- 2、点击查看后退的时候，不能刷业务额外的接口【先用一个页面来玩，然后看别的怎么实现】
+- 3、批量选择的数据不是普通列表，而是树形的列表 eg：/Users/cql/work/business-frontend/apps/mobile/src/pages/Patrolling/BasicSetting/PatrolLocations。我在控件内弄了个otherData【但是还没实现】
 
 ##### 特殊 讲：
 - http://localhost:8000/#/asset/asset-management/asset-acquisition , IFCA Msc Bhd, Rejected, Re-Submit，statusConfig的activeKey
