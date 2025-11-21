@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "82222983c6ebdc4c",
+        "id": "ab96444cded0e55b",
         "type": "tabs",
         "children": [
           {
-            "id": "8d53e73f2806e71b",
+            "id": "9a29731283f68bde",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "培训/实习生培训/1119问题汇总.md",
-                "mode": "preview",
+                "file": "个人笔记/git.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1119问题汇总"
+              "title": "git"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 281.5
   },
   "right": {
     "id": "d256a1092d471294",
@@ -181,8 +180,16 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "8d53e73f2806e71b",
+  "active": "9a29731283f68bde",
   "lastOpenFiles": [
+    "培训/实习生培训/实习生问题二.md",
+    "Pasted image 20251120182127.png",
+    "Pasted image 20251120182000.png",
+    "培训/实习生培训/实习生问题一.md",
+    "培训/实习生培训/培训知识.md",
+    "Pasted image 20251120181428.png",
+    "平台/抽包.md",
+    "工作简记/十一月份.md",
     "1119问题汇总.pdf",
     "培训/实习生培训/问题汇总的副本.md",
     "Pasted image 20251119165743.png",
@@ -191,13 +198,9 @@
     "Pasted image 20251119164354.png",
     "Pasted image 20251119161612.png",
     "Pasted image 20251119155325.png",
-    "培训/实习生培训/20251110.md",
-    "培训/实习生培训/1119问题汇总.md",
-    "平台/抽包.md",
     "与工作无关/山姆购物.md",
     "与工作无关/理财.md",
     "与工作无关/买衣服.md",
-    "工作简记/十一月份.md",
     "平台/随手Bug.md",
     "培训/产品介绍.md",
     "平台/组件文档/SysProList.md",
@@ -217,18 +220,13 @@
     "理财/建设银行理财收益.md",
     "理财/建设银行基金收益.md",
     "平台/组件文档/SysToolTip.md",
-    "平台/组件文档/SysToast.md",
     "ERP",
     "平台/组件文档",
     "教资",
     "Pasted image 20250313135653.png",
     "平台",
-    "Pasted image 20250313114756.png",
-    "Pasted image 20251108145550.png",
     "Saas和运营平台",
     "ERP6.2",
-    "Pasted image 20251104161608.png",
-    "培训/实习生培训",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
