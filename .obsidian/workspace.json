@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5,
-    "collapsed": true
+    "width": 243.5
   },
   "right": {
     "id": "d256a1092d471294",
@@ -184,8 +183,9 @@
   "active": "81491e8640c0db01",
   "lastOpenFiles": [
     "ERP/平台/抽包.md",
-    "培训/实习生培训/培训知识.md",
     "ERP/平台/本地化.md",
+    "ERP/常见Bug记录.md",
+    "培训/实习生培训/培训知识.md",
     "个人笔记/git.md",
     "实习生问题一.pdf",
     "实习生问题二.pdf",
@@ -201,7 +201,6 @@
     "与工作无关/理财.md",
     "与工作无关/买衣服.md",
     "与工作无关/山姆购物.md",
-    "ERP/常见Bug记录.md",
     "ERP/菜单.md",
     "Pasted image 20251202144920.png",
     "longshot20251202144745.png",
