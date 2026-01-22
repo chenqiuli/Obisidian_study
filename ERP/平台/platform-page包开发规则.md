@@ -1,0 +1,9 @@
+- apps下面的随便一个应用：如mobile，config.ts内注入ifcaPage，这样子使用。
+- platform-page的src下的index.ts是每个模块的路由。
+- src下面是模块名：
+	- 模块名下面有page、services、index.ts；
+	- page下面建立文件夹，使用相对路径，这里的组件不能使用跨模块的组件；
+	- services是openapi出来的，index.ts是路由配置，路由规则要使用全路径，不能使用子路由，每次添加路由信息，要重新编辑，如果是修改原来的路由信息，会有热更新。
+	- 本地化：还是在平台包的locales里面加，然后要复制到业务代码里面的locales去
+- 在@ifca/platform-page下提交代码的时候要先pnpm build，会校验有没有跨模块引用的组件。这个包是要打包了才能用到别的地方的。
+- 这个代码开发好了，这个包也是需要发包的，然后用到业务代码的pnpm-workspace.yaml内改包，然后在业务代码的config.ts内加入ifcaPage。

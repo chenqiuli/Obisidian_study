@@ -15,7 +15,7 @@
               "state": {
                 "file": "工作简记/2026.01.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "2026.01"
@@ -169,7 +169,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -182,12 +182,14 @@
   },
   "active": "6fe4a34b6d88d442",
   "lastOpenFiles": [
-    "ERP/平台/开发流程.md",
-    "工作简记/2026.01.md",
-    "与工作无关/买衣服.md",
     "ERP/平台/抽包.md",
-    "Pasted image 20260116103853.png",
+    "工作简记/2026.01.md",
+    "ERP/平台/platform-page包开发规则.md",
     "ERP/平台/本地化.md",
+    "ERP/平台/开发流程.md",
+    "Pasted image 20260119115104.png",
+    "与工作无关/买衣服.md",
+    "Pasted image 20260116103853.png",
     "个人笔记/git.md",
     "未命名.md",
     "未命名.base",
@@ -215,7 +217,6 @@
     "Pasted image 20251202142241.png",
     "Pasted image 20251202140349.png",
     "Pasted image 20251202140213.png",
-    "Pasted image 20251202140053.png",
     "ERP/平台/组件文档/SysProList.md",
     "工作简记/八月份.md",
     "工作简记/十一月份.md",
@@ -223,7 +224,6 @@
     "与工作无关",
     "培训/产品介绍",
     "培训",
-    "工作简记/十月份.md",
     "ERP",
     "ERP/平台/组件文档",
     "教资",
