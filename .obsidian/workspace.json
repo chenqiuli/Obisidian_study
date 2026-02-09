@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ERP/平台/组件文档/SysProList.md",
-                "mode": "preview",
+                "file": "工作简记/2026.02-2.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SysProList"
+              "title": "2026.02-2"
             }
           }
         ]
@@ -182,12 +182,15 @@
   },
   "active": "44b8ef22ee97a581",
   "lastOpenFiles": [
-    "ERP/平台/组件文档/SysForm.md",
-    "ERP/平台/组件文档/SysProList.md",
-    "ERP/平台/抽包.md",
-    "工作简记/2026.02.md",
-    "ERP/平台/本地化.md",
+    "工作简记/2026.02-1.md",
+    "工作简记/2026.02-2.md",
     "工作简记/2026.01.md",
+    "ERP/平台/抽包.md",
+    "ERP/平台/本地化.md",
+    "ERP/平台/组件文档/SysProList.md",
+    "ERP/平台/组件文档/SysProFormSelect.md",
+    "ERP/平台/组件文档/SysProDatePicker.md",
+    "ERP/平台/组件文档/SysForm.md",
     "ERP/平台/开发流程.md",
     "ERP/常见Bug记录.md",
     "个人笔记/git.md",
@@ -210,8 +213,6 @@
     "培训/后端/实践.md",
     "培训/后端/笔记.md",
     "培训/产品介绍.md",
-    "与工作无关/山姆购物.md",
-    "ERP/菜单.md",
     "Pasted image 20251202144920.png",
     "longshot20251202144745.png",
     "Pasted image 20251202144532.png",
@@ -220,7 +221,6 @@
     "Pasted image 20251202142241.png",
     "Pasted image 20251202140349.png",
     "Pasted image 20251202140213.png",
-    "工作简记/八月份.md",
     "与工作无关",
     "培训/产品介绍",
     "培训",
