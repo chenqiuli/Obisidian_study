@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 272.5
   },
   "right": {
     "id": "d256a1092d471294",
@@ -182,14 +182,14 @@
   },
   "active": "44b8ef22ee97a581",
   "lastOpenFiles": [
-    "工作简记/2026.02-1.md",
-    "工作简记/2026.02-2.md",
-    "工作简记/2026.03 年后才cherry-pick.md",
     "ERP/平台/抽包.md",
+    "工作简记/2026.03 年后才cherry-pick.md",
+    "工作简记/2026.02-2.md",
+    "ERP/平台/组件文档/SysProList.md",
+    "工作简记/2026.02-1.md",
     "ERP/平台/本地化.md",
     "个人笔记/git.md",
     "工作简记/2026.01.md",
-    "ERP/平台/组件文档/SysProList.md",
     "ERP/平台/组件文档/SysProFormSelect.md",
     "ERP/平台/组件文档/SysProDatePicker.md",
     "ERP/平台/组件文档/SysForm.md",
