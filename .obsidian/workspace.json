@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "317b2ce61f701fc7",
+        "id": "dedebfddf28163c2",
         "type": "tabs",
         "children": [
           {
-            "id": "44b8ef22ee97a581",
+            "id": "5b18710ab361b66d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作简记/2026.03 年后才cherry-pick.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026.03 年后才cherry-pick"
+              "title": "新标签页"
             }
           }
         ]
@@ -180,15 +176,16 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "44b8ef22ee97a581",
+  "active": "8424eb537d1bb1ac",
   "lastOpenFiles": [
+    "培训/产品介绍.md",
+    "个人笔记/git.md",
     "ERP/平台/抽包.md",
     "工作简记/2026.03 年后才cherry-pick.md",
-    "工作简记/2026.02-2.md",
     "ERP/平台/组件文档/SysProList.md",
+    "工作简记/2026.02-2.md",
     "工作简记/2026.02-1.md",
     "ERP/平台/本地化.md",
-    "个人笔记/git.md",
     "工作简记/2026.01.md",
     "ERP/平台/组件文档/SysProFormSelect.md",
     "ERP/平台/组件文档/SysProDatePicker.md",
@@ -212,7 +209,6 @@
     "培训/实习生培训/实习生问题三.md",
     "培训/实习生培训/实习生问题二.md",
     "培训/后端/实践.md",
-    "培训/后端/笔记.md",
     "Pasted image 20251202144920.png",
     "longshot20251202144745.png",
     "Pasted image 20251202144532.png",
