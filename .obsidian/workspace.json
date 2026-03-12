@@ -11,10 +11,14 @@
             "id": "5b18710ab361b66d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "工作简记/2026.03-2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2026.03-2"
             }
           }
         ]
@@ -176,17 +180,19 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "8424eb537d1bb1ac",
+  "active": "5b18710ab361b66d",
   "lastOpenFiles": [
+    "工作简记/2026.01.md",
+    "与工作无关/我们.md",
+    "工作简记/2026.03-2.md",
+    "ERP/平台/抽包.md",
+    "工作简记/2026.03-01.md",
     "培训/产品介绍.md",
     "个人笔记/git.md",
-    "ERP/平台/抽包.md",
-    "工作简记/2026.03 年后才cherry-pick.md",
     "ERP/平台/组件文档/SysProList.md",
     "工作简记/2026.02-2.md",
     "工作简记/2026.02-1.md",
     "ERP/平台/本地化.md",
-    "工作简记/2026.01.md",
     "ERP/平台/组件文档/SysProFormSelect.md",
     "ERP/平台/组件文档/SysProDatePicker.md",
     "ERP/平台/组件文档/SysForm.md",
@@ -207,8 +213,6 @@
     "培训/实习生培训/佣金管理验收标准.md",
     "培训/实习生培训/实习生问题一.md",
     "培训/实习生培训/实习生问题三.md",
-    "培训/实习生培训/实习生问题二.md",
-    "培训/后端/实践.md",
     "Pasted image 20251202144920.png",
     "longshot20251202144745.png",
     "Pasted image 20251202144532.png",
