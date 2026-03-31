@@ -16,3 +16,4 @@ git checkout XXX // 切换到目标分支
 ```
 
 - 严格区分大小写：git config core.ignorecase false
+- 清除pnpm缓存：pnpm store prune
