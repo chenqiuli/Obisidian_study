@@ -1,0 +1,3 @@
+- 打开文件夹：open ~
+- 进入目录：cd .claude、pwd、open 路径 
+- 
