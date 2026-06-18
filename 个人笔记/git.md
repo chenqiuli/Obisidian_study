@@ -1,4 +1,4 @@
-&- 查看远程所有分支：
+- 查看远程所有分支：
 ```bash
 git fetch origin
 ```
@@ -14,6 +14,12 @@ git log // 查看要挑拣的commit hash
 git checkout XXX // 切换到目标分支
 出现冲突解决冲突，然后正常add、commit、pull、push
 ```
+- git操作失误：假如我在cherry-pick到main分支，我pull代码的时候，不小心pull dev了，应该是要pull main的，这就是操作失误。
+```bash
+// 彻底撤销最近一次合并（git pull）
+git reset --hard HEAD^
+```
+
 
 - 严格区分大小写：git config core.ignorecase false
 - 清除pnpm缓存：pnpm store prune
