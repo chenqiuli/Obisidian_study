@@ -1,0 +1,1 @@
+- 打开全局skill目录：open ~/.claude/skills/
