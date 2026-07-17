@@ -8,6 +8,7 @@
 - /login：登录claude code账号
 
 
-#### 三、章节学习
-- 1、Ralph Wiggum Plugin/Ralph Loop：让claude code写完代码后，每次带着之前的代码结果，不断改进 【非常耗token】
-- 
+#### 三、使用经验
+- fan out subagents
+![697](Pasted%20image%2020260717143011.png)
+![](Pasted%20image%2020260717143101.png)
