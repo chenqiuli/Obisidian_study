@@ -1,1 +1,2 @@
 - 打开全局skill目录：open ~/.claude/skills/
+- 恢复会话：终端进入对应目录，claude --resume ticket-agent-script-i18n
