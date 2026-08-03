@@ -6,9 +6,12 @@
 - /model：切换模型
 - /usage：查看额度
 - /login：登录claude code账号
-
-
 #### 三、使用经验
 - fan out subagents
 ![697](Pasted%20image%2020260717143011.png)
 ![](Pasted%20image%2020260717143101.png)
+####  四、常用命令
+- 查找claude目录
+```bash
+cd ~/.claude
+```
