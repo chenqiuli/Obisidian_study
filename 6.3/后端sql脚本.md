@@ -1,0 +1,1 @@
+- 部署 uat 的时候，要 pick 到uat：http://123.249.96.106:32023/ERPSTD/SY62/business-backend/-/commit/c1bce0a00c7d7a0213db3158f8a6bf2a389be85d
